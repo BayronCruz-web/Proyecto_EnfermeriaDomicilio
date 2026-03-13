@@ -1,69 +1,257 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Enfermeria a Domicilio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Inicio de Barra de Navegacion y seccion principal -->
 
-    <header id="wdm-header">
-        <h1 class="wdm-title">Enfermeria a Domicilio</h1>
-        <nav class="wdm-nav">
-            <div class="dropdown-menu"><i class="bi bi-list"></i>
-                <div class="dropdown-content">
-                    <ul class="wdm-nav-list">
-                        <li class="wdm-list-item"><a href="">Inicio</a></li>
-                        <li class="wdm-list-item"><a href="">Servicios</a></li>
-                        <li class="wdm-list-item"><a href="">Nosotros</a></li>
-                        <li class="wdm-list-item"><a href="">Contacto</a></li>
-                    </ul>                
-                </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+
+            <!-- Logo / Title -->
+            <a class="navbar-brand fw-bold titulo-navbar" href="#">
+                Enfermería a Domicilio
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
+                <i class="bi bi-list"></i>
+
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+
+    <!-- Finaliza Barra de Navegacion -->
 
     <main>
         <section id="banner">
-             <article class="wdm-banner-content">
-                    <h2>Enfermeria a Domicilio Leidy Gonzalez</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magnam consectetur debitis qui voluptatem! 
-                        Quam vero placeat sunt facere velit est repellat error, soluta assumenda, adipisci beatae! Deserunt, nobis saepe.</p>
-             </article>
+            <img class="banner-img" src="/assets/Carrera-enfermeria.jpg" alt="">
+
+            <article class="wdm-banner-content">
+                <span class="banner-badge">Atención profesional en casa</span>
+                <h2>Enfermería a Domicilio<br>Leidy González</h2>
+                <p>
+                    Brindamos atención de enfermería profesional en la comodidad de su hogar.
+                    Nuestro compromiso es ofrecer cuidado humano, seguro y personalizado
+                    para mejorar la calidad de vida de cada paciente y brindar tranquilidad
+                    a sus familiares.
+                </p>
+                <div class="banner-btns">
+                    <a href="#contacto" class="btn-primary">Solicitar atención</a>
+                    <a href="#servicios" class="btn-secondary">Ver servicios</a>
+                </div>
+            </article>
         </section>
 
         <section id="benefits-section">
             <ul class="benefits-list">
                 <li class="benefits-item">
-                    <i>icon</i>
-                    <h2>Primer Beneficio:</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <i class="bi bi-person-heart"></i>
+                    <h2>Atencion Personalizada</h2>
+                    <p>Cada paciente recibe un plan de atención adaptado a sus necesidades,
+                        garantizando un cuidado cercano, profesional y enfocado en su bienestar.</p>
                 </li>
                 <li class="benefits-item">
-                    <i>icon</i>
-                    <h2>Segundo Beneficio:</h2>
-                    <p>Quaerat magnam consectetur debitis qui voluptatem!</p>
+                    <i class="bi bi-house-heart"></i>
+                    <h2>Comodidad en su hogar</h2>
+                    <p>Evite traslados innecesarios y reciba atención de enfermería
+                        desde la tranquilidad de su hogar, con la misma calidad
+                        y profesionalismo que en un centro de salud.</p>
                 </li>
                 <li class="benefits-item">
-                    <i>icon</i>
-                    <h2>Tercer Beneficio:</h2>
-                    <p>Quam vero placeat sunt facere velit est repellat error,</p>                    
+                    <i class="bi bi-shield-check"></i>
+                    <h2>Cuidado Profesional</h2>
+                    <p>Servicio brindado por personal capacitado y comprometido
+                        con la salud y seguridad de cada paciente, siguiendo
+                        protocolos profesionales de atención.</p>
                 </li>
             </ul>
         </section>
+
+        <!-- Finaliza seccion principal -->
+
+        <!-- Inicia Carousel de Servicios -->
+
+        <div class="servicios-section">
+
+            <h2 class="servicios-title">Nuestros <strong>servicios</strong></h2>
+            <p class="servicios-subtitle">
+                Experimente nuestra gama de servicios integrales adaptados a todas tus necesidades
+            </p>
+
+            <div id="carouselExampleAutoplaying" class="carousel slide servicios-carousel" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="servicio-card">
+
+                            <img src="/assets/prueba_horizontal.jpg" class="servicio-img" alt="">
+
+                            <div class="servicio-content">
+                                <h4>Cuido y asistencia de niños en el hogar</h4>
+
+                                <p>
+                                    El servicio se basa en el acompañamiento y apoyo a los padres
+                                    en las diferentes etapas de desarrollo del niño desde 0 meses...
+                                </p>
+
+                                <a href="#" class="servicio-btn">Agendar Cita</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="servicio-card">
+
+                            <img src="/assets/prueba_vertical.jpg" class="servicio-img" alt="">
+
+                            <div class="servicio-content">
+                                <h4>Aplicación de inyecciones</h4>
+
+                                <p>
+                                    Servicio profesional de aplicación de medicamentos
+                                    de forma segura y confiable.
+                                </p>
+
+                                <a href="#" class="servicio-btn">Agendar Cita</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Finaliza Carousel de Servicios -->
+
+        <!-- Inicia Carousel de Quienes Somos -->
+        <section id="quienes-somos">
+
+            <h2 class="qs-title">Quiénes Somos</h2>
+
+            <div id="doctorCarousel" class="carousel slide">
+
+                <div class="carousel-inner">
+
+
+                    <div class="carousel-item active">
+                        <div class="doctor-card">
+
+                            <img src="/assets/joven-doctora.jpg" class="doctor-img" alt="Doctor">
+
+                            <div class="doctor-overlay">
+                                <h3>Licda. Leidy Gonzalez</h3>
+                                <p>
+                                    Especialista en enfermería comunitaria con más de 10 años de
+                                    experiencia brindando atención domiciliaria y cuidados
+                                    personalizados para cada paciente.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Doctor 2 -->
+                    <div class="carousel-item">
+                        <div class="doctor-card">
+
+                            <img src="/assets/doctor-elegante.jpg" class="doctor-img" alt="Doctor">
+
+                            <div class="doctor-overlay">
+                                <h3>Lic. Victor Barrantes</h3>
+                                <p>
+                                    Profesional dedicada al cuidado integral del paciente,
+                                    especializada en atención geriátrica y acompañamiento
+                                    familiar.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#doctorCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#doctorCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Finaliza Carousel de Quienes Somos -->
+
     </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-columns">
                 <h3>Despedida</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea laudantium assumenda saepe voluptatem quo recusandae</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea laudantium assumenda saepe voluptatem quo
+                    recusandae</p>
             </div>
 
             <div class="footer-columns">
@@ -87,6 +275,9 @@
     </footer>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
