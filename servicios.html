@@ -18,26 +18,37 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
 
-            <a class="navbar-brand titulo-navbar" href="index.html">
+            <!-- Logo / Title -->
+            <a class="navbar-brand fw-bold titulo-navbar" href="#">
                 Enfermería a Domicilio
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
+                <i class="bi bi-list"></i>
+
             </button>
 
-            <div class="collapse navbar-collapse" id="menu">
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link active" href="index.html">Inicio</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="servicios.html">Servicios</a>
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
                     </li>
 
                     <li class="nav-item">
@@ -45,8 +56,8 @@
                     </li>
 
                 </ul>
-            </div>
 
+            </div>
         </div>
     </nav>
 

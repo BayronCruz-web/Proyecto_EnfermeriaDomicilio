@@ -302,18 +302,38 @@ font-style: italic;
 
 /*Seccion Footer*/
 
+footer {
+    background-color: #2b2b2b;
+    border-top: 3px solid #53b4d4;
+}
+
 .footer-content {
-    background-color: #333;
     color: white;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    padding: 15px;
-    padding-left: 40px;
+    gap: 2rem;
+    padding: 30px 20px;
 }
 
-.footer-columns {
-    margin-bottom: 20px;
+.footer-columns h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 16px;
+    letter-spacing: 0.03em;
+}
+
+.footer-columns p {
+    color: #B3B3B3;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.wdm-footer-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .wdm-footer-list .wdm-list-item {
@@ -323,59 +343,183 @@ font-style: italic;
 .wdm-footer-list .wdm-list-item a {
     color: #B3B3B3;
     text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
 }
 
-.footer-columns p {
-    color: #B3B3B3;
+.wdm-footer-list .wdm-list-item a:hover {
+    color: #53b4d4;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding: 16px 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #777;
+    font-size: 12px;
+}
+
+/* Tablet y desktop */
+@media (min-width: 600px) {
+    .footer-content {
+        flex-direction: row;
+        padding: 50px 40px;
+    }
+
+    .footer-columns {
+        flex: 1;
+    }
+
+    .footer-bottom {
+        padding: 16px 40px;
+    }
 }
 
 /*Pagina de Contacto*/
 
 .contact-title {
-    font-size: 40px;
-    margin-bottom: 40px;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.contact-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #53b4d4;
+    margin: 10px auto 0;
 }
 
 .contact-box {
-    background: #f8f9fa;
-    padding: 40px;
-    border-radius: 10px;
+    background: #fff;
+    padding: 24px 16px;
+    border-radius: 16px;
+    border: 1px solid #e0ecee;
+}
+
+.contact-info h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #0f2d35;
 }
 
 .contact-info p {
     color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.contact-info {
+    margin-bottom: 28px;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-top: 15px;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.contact-item a {
+    color: #53b4d4;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
 }
 
 .contact-item i {
-    background: #e9ecef;
+    background: #e6f6f8;
+    color:#53b4d4;
     padding: 10px;
     border-radius: 50%;
+    font-size: 15px;
+}
+
+.contact-info h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f2d35;
+    margin-bottom: 0;
 }
 
 .social-icons {
     display: flex;
-    gap: 15px;
-    margin-top: 15px;
+    gap: 12px;
+    margin-top: 12px;
 }
 
 .social-icons i {
-    font-size: 22px;
-    background: #e9ecef;
+    font-size: 18px;
+    background: #e6f6f8;
+    color: #53b4d4;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
+    transition: background 0.2s, color 0.2s;
 }
 
 .social-icons i:hover {
-    background: #0d6efd;
+    background: #3e88a1;
     color: white;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #d8eaed;
+    background: #f7fafa;
+    font-size: 14px;
+    padding: 11px 14px;
+}
+
+.form-control:focus {
+    border-color: #53b4d4;
+    box-shadow: 0 0 0 3px rgba(83, 180, 212, 0.15);
+    background: #fff;
+}
+
+#contactForm .btn-primary {
+    background: #53b4d4;
+    border: none;
+    border-radius: 25px;
+    padding: 12px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    transition: background 0.2s;
+}
+
+#contactForm .btn-primary:hover {
+    background: #3e88a1;
+}
+
+/* Tablet y desktop */
+@media (min-width: 768px) {
+    .contact-title {
+        font-size: 2.2rem;
+    }
+
+    .contact-box {
+        padding: 40px;
+    }
+
+    .contact-info {
+        margin-bottom: 0;
+    }
 }
 
 /* Pagina de Servicios*/
