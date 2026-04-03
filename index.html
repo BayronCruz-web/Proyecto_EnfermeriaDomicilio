@@ -51,11 +51,14 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="autor.html">Autor</a>
                     </li>
 
                 </ul>
@@ -115,70 +118,111 @@
 
         <!-- Inicia Carousel de Servicios -->
 
-        <div class="servicios-section">
+    <section class="servicios-section">
 
-            <h2 class="servicios-title">Nuestros <strong>servicios</strong></h2>
-            <p class="servicios-subtitle">
-                Experimente nuestra gama de servicios integrales adaptados a todas tus necesidades
+        <div class="servicios-header text-center">
+            <h1>Nuestros <strong>servicios</strong></h1>
+            <div class="titulo-linea"></div>
+            <p>
+                Experimente nuestra gama de servicios integrales adaptados a todas sus necesidades
             </p>
+        </div>
 
-            <div id="carouselExampleAutoplaying" class="carousel slide servicios-carousel" data-bs-ride="carousel">
+        <div id="carouselServicios" class="carousel slide" data-bs-ride="carousel">
 
-                <div class="carousel-inner">
+            <div class="carousel-inner">
 
-                    <div class="carousel-item active">
-                        <div class="servicio-card">
+                <!-- SERVICIO 1 -->
+                <div class="carousel-item active">
 
-                            <img src="assets/prueba_horizontal.jpg" class="servicio-img" alt="">
+                    <div class="servicio-card">
 
-                            <div class="servicio-content">
-                                <h4>Cuido y asistencia de niños en el hogar</h4>
+                        <img src="assets/prueba_horizontal.jpg" class="img-fluid">
 
-                                <p>
-                                    El servicio se basa en el acompañamiento y apoyo a los padres
-                                    en las diferentes etapas de desarrollo del niño desde 0 meses...
-                                </p>
+                        <div class="servicio-body">
+                            <h3>Asistencia en etapa de postparto y maternidad</h3>
 
-                                <a href="#" class="servicio-btn">Agendar Cita</a>
-                            </div>
+                            <p>
+                                El cuidado se centra en garantizar que tanto la madre como el recién
+                                nacido reciban la atención adecuada, brindando confort y seguridad.
+                            </p>
 
+                            <a href="contacto.html" class="btn btn-outline-info w-100">
+                                Saber más
+                            </a>
                         </div>
-                    </div>
 
-                    <div class="carousel-item">
-                        <div class="servicio-card">
-
-                            <img src="assets/prueba_vertical.jpg" class="servicio-img" alt="">
-
-                            <div class="servicio-content">
-                                <h4>Aplicación de inyecciones</h4>
-
-                                <p>
-                                    Servicio profesional de aplicación de medicamentos
-                                    de forma segura y confiable.
-                                </p>
-
-                                <a href="#" class="servicio-btn">Agendar Cita</a>
-                            </div>
-
-                        </div>
                     </div>
 
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
 
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+                <!-- SERVICIO 2 -->
+                <div class="carousel-item">
+
+                    <div class="servicio-card">
+
+                        <img src="assets/prueba_vertical.jpg" class="img-fluid">
+
+                        <div class="servicio-body">
+                            <h3>Aplicación de inyecciones</h3>
+
+                            <p>
+                                Servicio profesional de administración de medicamentos con personal
+                                de enfermería capacitado y protocolos de seguridad.
+                            </p>
+
+                            <a href="contacto.html" class="btn btn-outline-info w-100">
+                                Saber más
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SERVICIO 3 -->
+                <div class="carousel-item">
+
+                    <div class="servicio-card">
+
+                        <img src="assets/Carrera-enfermeria.jpg" class="img-fluid">
+
+                        <div class="servicio-body">
+                            <h3>Cuidado de adultos mayores</h3>
+
+                            <p>
+                                Atención integral en el hogar para adultos mayores con monitoreo
+                                constante y acompañamiento profesional.
+                            </p>
+
+                            <a href="contacto.html" class="btn btn-outline-info w-100">
+                                Saber más
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
+
+            <!-- BOTONES -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicios"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselServicios"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
         </div>
+
+    </section>
 
         <!-- Finaliza Carousel de Servicios -->
 
@@ -187,58 +231,60 @@
 
             <h2 class="qs-title">Quiénes Somos</h2>
 
-            <div id="doctorCarousel" class="carousel slide">
-
+            <!-- Vista mobile: carousel Bootstrap -->
+            <div id="doctorCarousel" class="carousel slide d-block d-lg-none">
                 <div class="carousel-inner">
-
-
                     <div class="carousel-item active">
                         <div class="doctor-card">
-
                             <img src="assets/joven-doctora.jpg" class="doctor-img" alt="Doctor">
-
                             <div class="doctor-overlay">
                                 <h3>Licda. Leidy Gonzalez</h3>
-                                <p>
-                                    Especialista en enfermería comunitaria con más de 10 años de
+                                <p>Especialista en enfermería comunitaria con más de 10 años de
                                     experiencia brindando atención domiciliaria y cuidados
-                                    personalizados para cada paciente.
-                                </p>
+                                    personalizados para cada paciente.</p>
                             </div>
-
                         </div>
                     </div>
-
-                    <!-- Doctor 2 -->
                     <div class="carousel-item">
                         <div class="doctor-card">
-
                             <img src="assets/doctor-elegante.jpg" class="doctor-img" alt="Doctor">
-
                             <div class="doctor-overlay">
                                 <h3>Lic. Victor Barrantes</h3>
-                                <p>
-                                    Profesional dedicada al cuidado integral del paciente,
-                                    especializada en atención geriátrica y acompañamiento
-                                    familiar.
-                                </p>
+                                <p>Profesional dedicada al cuidado integral del paciente,
+                                    especializada en atención geriátrica y acompañamiento familiar.</p>
                             </div>
-
                         </div>
                     </div>
-
                 </div>
-
                 <button class="carousel-control-prev" type="button" data-bs-target="#doctorCarousel"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </button>
-
                 <button class="carousel-control-next" type="button" data-bs-target="#doctorCarousel"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </button>
+            </div>
 
+            <!-- Vista desktop: flex directo, sin carousel -->
+            <div class="qs-desktop d-none d-lg-flex">
+                <div class="doctor-card">
+                    <img src="assets/joven-doctora.jpg" class="doctor-img" alt="Doctor">
+                    <div class="doctor-overlay">
+                        <h3>Licda. Leidy Gonzalez</h3>
+                        <p>Especialista en enfermería comunitaria con más de 10 años de
+                            experiencia brindando atención domiciliaria y cuidados
+                            personalizados para cada paciente.</p>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <img src="assets/doctor-elegante.jpg" class="doctor-img" alt="Doctor">
+                    <div class="doctor-overlay">
+                        <h3>Lic. Victor Barrantes</h3>
+                        <p>Profesional dedicada al cuidado integral del paciente,
+                            especializada en atención geriátrica y acompañamiento familiar.</p>
+                    </div>
+                </div>
             </div>
 
         </section>
