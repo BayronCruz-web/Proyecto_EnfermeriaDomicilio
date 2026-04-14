@@ -446,15 +446,12 @@ a:hover {
 
 /* Pagina De Nosotros*/
 
-.qs-page {
-    font-family: var(--font-sans);
-    background: #f0f4f4;
-}
+
 
 /* Hero */
 .qs-hero {
     background: linear-gradient(135deg, #0c5e6b 0%, #2ba6b1 60%, #53b4d4 100%);
-    padding: 40px 20px;
+    padding: 2.5rem 1.2rem 3rem;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -468,31 +465,31 @@ a:hover {
 }
 
 .qs-hero h1 {
-    font-size: 22px;
-    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    font-weight: 700;
     color: #fff;
-    margin-bottom: 8px;
     position: relative;
+    margin: 0;
 }
 
 .qs-hero h1 span {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .qs-hero p {
-    font-size: 13px;
-    color: rgba(255, 255, 255, 0.75);
-    max-width: 480px;
-    margin: 0 auto 16px;
-    line-height: 1.6;
+    margin-top: .5rem;
+    color: rgba(255, 255, 255, .82);
+    font-size: .95rem;
     position: relative;
 }
 
 .qs-hero-line {
-    width: 40px;
-    height: 2px;
-    background: rgba(255, 255, 255, 0.5);
-    margin: 0 auto;
+    width: 50px;
+    height: 3px;
+    background: rgba(255, 255, 255, .55);
+    border-radius: 2px;
+    margin: .9rem auto 0;
     position: relative;
 }
 
@@ -1006,6 +1003,7 @@ a:hover {
     font-weight: 700;
     color: #fff;
     position: relative;
+    margin: 0;
 }
 
 .autor-hero__title span {
