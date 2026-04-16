@@ -45,38 +45,91 @@
 
 
     <!-- SERVICIOS -->
-    <section class="servicios-section">
 
-        <div class="servicios-header text-center">
-            <h1>Nuestros <strong>servicios</strong></h1>
-            <div class="titulo-linea"></div>
-            <p>
-                Experimente nuestra gama de servicios integrales adaptados a todas sus necesidades
-            </p>
-        </div>
+    <section class="servicios-hero">
+        <h1 class="servicios-hero__title"><span>Nuestros</span> Servicios</h1>
+        <p class="servicios-hero__sub">Experimente nuestra gama de servicios integrales adaptados a todas sus
+            necesidades</p>
+        <div class="servicios-hero__line"></div>
+    </section>
 
-        <div id="carouselServicios" class="carousel slide" data-bs-ride="carousel">
+    <main>
+        <section class="servicios-section">
 
-            <div class="carousel-inner">
+            <div id="carouselServicios" class="carousel slide" data-bs-ride="carousel">
 
-                <!-- SERVICIO 1 -->
-                <div class="carousel-item active">
+                <div class="carousel-inner">
 
-                    <div class="servicio-card">
+                    <!-- SERVICIO 1 -->
+                    <div class="carousel-item active">
 
-                        <img src="assets/prueba_horizontal.jpg" class="img-fluid">
+                        <div class="servicio-card">
 
-                        <div class="servicio-body">
-                            <h3>Asistencia en etapa de postparto y maternidad</h3>
+                            <img src="assets/prueba_horizontal.jpg" class="img-fluid">
 
-                            <p>
-                                El cuidado se centra en garantizar que tanto la madre como el recién
-                                nacido reciban la atención adecuada, brindando confort y seguridad.
-                            </p>
+                            <div class="servicio-body">
+                                <h3>Asistencia en etapa de postparto y maternidad</h3>
 
-                            <a href="contacto.html" class="btn btn-outline-info w-100">
-                                Saber más
-                            </a>
+                                <p>
+                                    El cuidado se centra en garantizar que tanto la madre como el recién
+                                    nacido reciban la atención adecuada, brindando confort y seguridad.
+                                </p>
+
+                                <a href="contacto.html" class="btn btn-outline-info w-100">
+                                    Saber más
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SERVICIO 2 -->
+                    <div class="carousel-item">
+
+                        <div class="servicio-card">
+
+                            <img src="assets/prueba_vertical.jpg" class="img-fluid">
+
+                            <div class="servicio-body">
+                                <h3>Aplicación de inyecciones</h3>
+
+                                <p>
+                                    Servicio profesional de administración de medicamentos con personal
+                                    de enfermería capacitado y protocolos de seguridad.
+                                </p>
+
+                                <a href="contacto.html" class="btn btn-outline-info w-100">
+                                    Saber más
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SERVICIO 3 -->
+                    <div class="carousel-item">
+
+                        <div class="servicio-card">
+
+                            <img src="assets/Carrera-enfermeria.jpg" class="img-fluid">
+
+                            <div class="servicio-body">
+                                <h3>Cuidado de adultos mayores</h3>
+
+                                <p>
+                                    Atención integral en el hogar para adultos mayores con monitoreo
+                                    constante y acompañamiento profesional.
+                                </p>
+
+                                <a href="contacto.html" class="btn btn-outline-info w-100">
+                                    Saber más
+                                </a>
+                            </div>
+
                         </div>
 
                     </div>
@@ -84,72 +137,21 @@
                 </div>
 
 
-                <!-- SERVICIO 2 -->
-                <div class="carousel-item">
+                <!-- BOTONES -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicios"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
 
-                    <div class="servicio-card">
-
-                        <img src="assets/prueba_vertical.jpg" class="img-fluid">
-
-                        <div class="servicio-body">
-                            <h3>Aplicación de inyecciones</h3>
-
-                            <p>
-                                Servicio profesional de administración de medicamentos con personal
-                                de enfermería capacitado y protocolos de seguridad.
-                            </p>
-
-                            <a href="contacto.html" class="btn btn-outline-info w-100">
-                                Saber más
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- SERVICIO 3 -->
-                <div class="carousel-item">
-
-                    <div class="servicio-card">
-
-                        <img src="assets/Carrera-enfermeria.jpg" class="img-fluid">
-
-                        <div class="servicio-body">
-                            <h3>Cuidado de adultos mayores</h3>
-
-                            <p>
-                                Atención integral en el hogar para adultos mayores con monitoreo
-                                constante y acompañamiento profesional.
-                            </p>
-
-                            <a href="contacto.html" class="btn btn-outline-info w-100">
-                                Saber más
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselServicios"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
 
             </div>
 
-
-            <!-- BOTONES -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicios"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselServicios"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-
-        </div>
-
-    </section>
+        </section>
+    </main>
     <footer>
         <div class="footer-wrap">
             <div class="footer-content">

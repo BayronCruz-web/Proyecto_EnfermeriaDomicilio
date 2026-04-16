@@ -449,7 +449,7 @@ a:hover {
 
 
 /* Hero */
-.qs-hero {
+.nosotros-hero {
     background: linear-gradient(135deg, #0c5e6b 0%, #2ba6b1 60%, #53b4d4 100%);
     padding: 2.5rem 1.2rem 3rem;
     text-align: center;
@@ -457,14 +457,14 @@ a:hover {
     overflow: hidden;
 }
 
-.qs-hero::before {
+.nosotros-hero::before {
     content: '';
     position: absolute;
     inset: 0;
     background: radial-gradient(ellipse at 70% 50%, rgba(255, 255, 255, .07) 0%, transparent 70%);
 }
 
-.qs-hero h1 {
+.nosotros-hero h1 {
     font-family: 'Playfair Display', serif;
     font-size: 1.9rem;
     font-weight: 700;
@@ -473,11 +473,11 @@ a:hover {
     margin: 0;
 }
 
-.qs-hero h1 span {
+.nosotros-hero h1 span {
     font-weight: 400;
 }
 
-.qs-hero p {
+.nosotros-hero p {
     margin-top: .5rem;
     color: rgba(255, 255, 255, .82);
     font-size: .95rem;
@@ -923,20 +923,54 @@ a:hover {
 
 /* Pagina de Servicios*/
 
+
+.servicios-hero {
+    background: linear-gradient(135deg, #0c5e6b 0%, #2ba6b1 60%, #53b4d4 100%);
+    padding: 2.5rem 1.2rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.servicios-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(255, 255, 255, .07) 0%, transparent 70%);
+}
+
+.servicios-hero__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    margin: 0;
+}
+
+.servicios-hero__title span {
+    font-weight: 400;
+}
+
+.servicios-hero__sub {
+    margin-top: .5rem;
+    color: rgba(255, 255, 255, .82);
+    font-size: .95rem;
+    position: relative;
+}
+
+.servicios-hero__line {
+    width: 50px;
+    height: 3px;
+    background: rgba(255, 255, 255, .55);
+    border-radius: 2px;
+    margin: .9rem auto 0;
+    position: relative;
+}
+
 .servicios-section {
     background: #eaf2f7;
     padding: 60px 20px;
-}
-
-.servicios-header h1 {
-    font-size: 42px;
-}
-
-.titulo-linea {
-    width: 80px;
-    height: 4px;
-    background: #2ba6b1;
-    margin: 10px auto 20px;
 }
 
 .servicio-card {
