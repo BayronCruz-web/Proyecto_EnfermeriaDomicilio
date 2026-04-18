@@ -32,8 +32,8 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                         <li class="nav-item"><a class="nav-link" href="autor.html">Autor</a></li>
                     </ul>
                 </div>
@@ -42,13 +42,13 @@
 
     </header>
 
-
-
-    <section class="nosotros-hero">
-        <h1>Sobre <span>Nosotros</span></h1>
-        <p>Conocé al equipo profesional detrás de Bonsái Enfermería, comprometido con tu bienestar y cuidado
+    <!-- HERO -->
+    <section class="hero">
+        <h1 class="hero__title">Sobre <span>Nosotros</span></h1>
+        <p class="hero__sub">Conocé al equipo profesional detrás de Bonsái Enfermería, comprometido con tu bienestar y
+            cuidado
             integral.</p>
-        <div class="qs-hero-line"></div>
+        <div class="hero__line"></div>
     </section>
 
     <main>
@@ -62,25 +62,22 @@
                         <div class="doctor-img-wrap">
                             <img src="assets/joven-doctora.jpg" alt="Licda. Leidy Gonzalez"
                                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                            <div class="doctor-img-placeholder" style="display:none">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="#1a7a6e" stroke-width="1.5">
-                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                                    <circle cx="12" cy="7" r="4" />
-                                </svg>
-                            </div>
                         </div>
                         <div class="doctor-info">
-                            <span class="doctor-tag">Enfermería comunitaria</span>
+                            <span class="doctor-tag">Licenciada en Enfermería</span>
                             <h3>Licda. Leidy Gonzalez</h3>
-                            <p>Especialista en enfermería comunitaria con más de 10 años de experiencia brindando
-                                atención domiciliaria y cuidados personalizados para cada paciente.</p>
+                            <p>Licenciada en Enfermería con 18 años de experiencia en el área de la salud, caracterizada
+                                por ofrecer una atención cálida, empática y personalizada. Su enfoque profesional se
+                                basa en el trato humano y el acompañamiento cercano, adaptándose a las necesidades
+                                individuales de cada paciente. Su amplia trayectoria respalda un servicio confiable,
+                                comprometido con el bienestar y la atención de calidad.</p>
                             <div class="doctor-divider"></div>
                             <div class="doctor-stat">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <circle cx="12" cy="12" r="10" />
                                     <path d="M12 6v6l4 2" />
                                 </svg>
-                                Más de 10 años de experiencia
+                                Más de 18 años de experiencia
                             </div>
                         </div>
                     </div>
@@ -89,18 +86,16 @@
                         <div class="doctor-img-wrap">
                             <img src="assets/doctor-elegante.jpg" alt="Lic. Victor Barrantes"
                                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                            <div class="doctor-img-placeholder" style="display:none">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="#1a7a6e" stroke-width="1.5">
-                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                                    <circle cx="12" cy="7" r="4" />
-                                </svg>
-                            </div>
                         </div>
                         <div class="doctor-info">
-                            <span class="doctor-tag">Atención geriátrica</span>
-                            <h3>Lic. Victor Barrantes</h3>
-                            <p>Profesional dedicado al cuidado integral del paciente, especializado en atención
-                                geriátrica y acompañamiento familiar cercano.</p>
+                            <span class="doctor-tag">Especialista en Cuidados Paliativos</span>
+                            <h3>Msc. Victor Barrantes</h3>
+                            <p>Profesional en enfermería con más de 12 años de experiencia, especializado en cuidados
+                                paliativos y en el acompañamiento integral de pacientes con enfermedades terminales. Se
+                                destaca por brindar una atención centrada en la persona, con un enfoque humano,
+                                respetuoso y personalizado, priorizando el bienestar y la calidad de vida en cada etapa
+                                del proceso. Su experiencia le permite ofrecer apoyo tanto al paciente como a sus
+                                familiares, con sensibilidad, ética y compromiso.</p>
                             <div class="doctor-divider"></div>
                             <div class="doctor-stat">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -169,24 +164,16 @@
         <div class="footer-wrap">
             <div class="footer-content">
 
-                <div class="footer-columns">
+                <div class="footer-columns footer-about">
                     <div class="footer-logo">
-                        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="22" cy="22" r="22" fill="#2a3040" />
-                            <path
-                                d="M22 10 C16 10 12 15 14 20 C10 20 8 24 11 27 C9 31 13 35 18 34 C19 37 22 38 22 38 C22 38 25 37 26 34 C31 35 35 31 33 27 C36 24 34 20 30 20 C32 15 28 10 22 10Z"
-                                fill="#4ecdc4" opacity="0.9" />
-                            <circle cx="19" cy="21" r="3" fill="#1e2228" />
-                            <path d="M22 30 C20 28 18 26 19 24 C20 27 22 28 22 30Z" fill="#1e2228" />
-                        </svg>
-                        <div>
-                            <div class="footer-logo-text">Bonsái</div>
-                            <div class="footer-logo-sub">enfermería</div>
-                        </div>
+                        <img src="assets/LogoEnfermeriaB&G.png" alt="Barrantes & González Enfermería">
                     </div>
-                    <p>Es un símbolo de fuerza, de libertad y autonomía, de fortaleza y perseverancia. Un bonsái es un
-                        árbol independiente, que se acerca a la perfección gracias a la paciencia, el amor y la
-                        disciplina. Expresa deseos de larga vida, de salud y tranquilidad.</p>
+
+                    <p class="footer-description">
+                        Brindamos atención de enfermería a domicilio con profesionalismo, calidez y compromiso.
+                        Nuestro objetivo es mejorar la calidad de vida de cada paciente con cuidado personalizado.
+                    </p>
+
                     <div class="footer-social">
                         <a href="#" aria-label="Facebook">f</a>
                         <a href="#" aria-label="Instagram">
@@ -219,9 +206,9 @@
                 <div class="footer-columns">
                     <h3>Información</h3>
                     <ul class="wdm-footer-list">
-                        <li class="wdm-list-item"><a href="#">Contacto</a></li>
-                        <li class="wdm-list-item"><a href="#">Sobre nosotros</a></li>
-                        <li class="wdm-list-item"><a href="#">Preguntas Frecuentes</a></li>
+                        <li class="wdm-list-item"><a href="contacto.html">Contacto</a></li>
+                        <li class="wdm-list-item"><a href="nosotros.html">Sobre nosotros</a></li>
+                        <li class="wdm-list-item"><a href="autor.html">Autor</a></li>
                         <li class="wdm-list-item"><a href="#">Política de privacidad</a></li>
                     </ul>
                 </div>
@@ -242,7 +229,7 @@
                             <path
                                 d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.29-1.29a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
                         </svg>
-                        (506) 7227-6393
+                        (+506) 8437-3286
                     </div>
                     <div class="footer-contact-item">
                         <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"

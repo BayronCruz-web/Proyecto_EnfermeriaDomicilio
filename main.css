@@ -182,72 +182,213 @@ a:hover {
     border-radius: 10px;
 }
 
+@media (min-width: 768px) {
+    #benefits-section .benefits-list {
+        flex-direction: row;
+        align-items: center;
+        max-width: 1100px;
+    }
+
+    #benefits-section .benefits-item {
+        flex: 1;
+    }
+
+    #benefits-section .benefits-item:nth-child(2) {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 /*Seccion Servicios*/
 
 .servicios-section {
-    background: #d9e1ec;
-    padding: 60px 20px;
-    text-align: center;
+    background: #eef4fb;
+    padding: 30px 12px;
 }
 
-.servicios-title {
-    font-size: 38px;
+/* HEADER */
+.servicios-header {
+    margin-bottom: 36px;
 }
 
-.servicios-subtitle {
-    max-width: 500px;
-    margin: 15px auto 40px;
-    color: #555;
-}
-
-.servicios-carousel {
-    max-width: 500px;
-    margin: auto;
-}
-
-.servicio-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    padding-bottom: 20px;
-}
-
-.servicio-img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-}
-
-.servicio-content {
-    padding: 20px;
-    text-align: left;
-}
-
-.servicio-content h4 {
-    font-size: 20px;
+.servicios-header h1 {
+    font-size: 1.6rem;
     margin-bottom: 10px;
 }
 
-.servicio-content p {
-    color: #666;
-    font-size: 14px;
+.servicios-header p {
+    color: #555;
+    font-size: 0.9rem;
 }
 
+/* WRAPPER */
+.servicios-carousel-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CLIP — este es el que realmente oculta el overflow horizontal */
+.servicios-clip {
+    overflow: hidden;
+    flex: 1;
+}
+
+/* VIEWPORT — no corta nada, solo pasa el ancho */
+.servicios-viewport {
+    overflow: visible;
+    width: 100%;
+}
+
+/* TRACK */
+.servicios-track {
+    display: flex;
+    gap: 16px;
+    transition: transform 0.4s ease;
+    align-items: stretch;
+}
+
+/* CARD — mobile: 1 card visible */
+.servicio-card {
+    min-height: 580px;
+    flex-shrink: 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+/* IMAGE */
+.servicio-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    flex-shrink: 0;
+    display: block;
+    border-radius: 14px 14px 0 0;
+}
+
+/* BODY */
+.servicio-body {
+    padding: 12px 14px 14px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* TITLE */
+.servicio-body h3 {
+    font-size: 0.98rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 6px 0;
+    min-height: 2.8em;
+    display: flex;
+    align-items: flex-start;
+    color: #1a1a1a;
+}
+
+/* TEXT */
+.servicio-body p {
+    font-size: 0.88rem;
+    color: #666;
+    line-height: 1.55;
+    flex-grow: 1;
+    margin: 0 0 10px 0;
+}
+
+/* BUTTON */
 .servicio-btn {
     display: block;
     text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    border: 2px solid #0d6efd;
-    border-radius: 6px;
+    border: 1.5px solid #00aacc;
+    color: #00aacc;
+    border-radius: 8px;
+    padding: 8px;
     text-decoration: none;
-    color: #0d6efd;
+    font-size: 0.85rem;
+    margin-top: auto;
+    transition: all 0.25s ease;
 }
 
 .servicio-btn:hover {
-    background: #0d6efd;
-    color: white;
+    background: #00aacc;
+    color: #fff;
 }
+
+/* BOTONES NAV */
+.servicios-btn-prev,
+.servicios-btn-next {
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #666;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: 0.2s;
+    padding: 8px 4px;
+}
+
+.servicios-btn-prev:hover,
+.servicios-btn-next:hover {
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* TABLET: 2 cards */
+@media (min-width: 540px) {
+    .servicio-card {
+        width: calc((100% - 16px) / 2);
+    }
+}
+
+/* DESKTOP: 3 cards */
+@media (min-width: 768px) {
+    .servicios-section {
+        padding: 60px 20px;
+    }
+
+    .servicios-header {
+        margin-bottom: 50px;
+    }
+
+    .servicios-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .servicios-header p {
+        font-size: 1rem;
+    }
+
+    .servicios-carousel-wrapper {
+        gap: 16px;
+    }
+
+    .servicios-track {
+        gap: 24px;
+    }
+
+    .servicio-card {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .servicio-card img {
+        height: 200px;
+    }
+
+    .servicios-btn-prev,
+    .servicios-btn-next {
+        font-size: 42px;
+    }
+}
+
 
 /*Seccion Quienes somos*/
 #quienes-somos {
@@ -300,6 +441,51 @@ a:hover {
     margin-bottom: 10px;
 }
 
+@media (min-width: 992px) {
+
+    .qs-desktop {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .qs-desktop .doctor-card {
+        flex: 1;
+        max-width: 380px;
+        margin: 0;
+        border-radius: 16px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+    }
+
+    .qs-desktop .doctor-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        display: block;
+    }
+
+    .qs-desktop .doctor-overlay {
+        padding: 24px;
+    }
+
+    .qs-desktop .doctor-overlay h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        margin-bottom: 8px;
+    }
+
+    .qs-desktop .doctor-overlay p {
+        font-size: 0.88rem;
+        color: rgba(255, 255, 255, 0.85);
+        line-height: 1.6;
+    }
+}
+
 /*Seccion Footer*/
 
 .footer-wrap {
@@ -312,68 +498,49 @@ a:hover {
 
 .footer-content {
     display: grid;
-    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
     gap: 40px;
-    max-width: 1100px;
-    margin: 0 auto;
 }
 
-.footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 16px;
+.footer-about {
+    max-width: 350px;
+    margin-left: 70px;
 }
 
-.footer-logo svg {
-    width: 44px;
-    height: 44px;
+.footer-logo img {
+
+    width: 170px;
+    margin-bottom: 0px;
+    height: auto;
 }
 
-.footer-logo-text {
-    font-size: 22px;
-    color: #4ecdc4;
-    font-style: italic;
-    font-weight: 500;
-    line-height: 1.1;
-}
-
-.footer-logo-sub {
-    font-size: 11px;
-    color: #888;
-    letter-spacing: 1.5px;
-    text-transform: lowercase;
-}
-
-.footer-columns p {
-    font-size: 13px;
-    color: #999;
-    line-height: 1.7;
-    margin: 0 0 20px;
+.footer-description {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #ccc;
+    margin-bottom: 20px;
 }
 
 .footer-social {
+  
     display: flex;
-    gap: 10px;
+    gap: 12px;
 }
 
 .footer-social a {
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    border: 1.5px solid #555;
+    background: #2c2c2c;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ccc;
-    text-decoration: none;
-    font-size: 14px;
-    transition: border-color 0.2s;
+    color: white;
+    transition: 0.3s;
 }
 
 .footer-social a:hover {
-    border-color: #4ecdc4;
-    color: #4ecdc4;
+    background: #00bcd4; /* color acorde a tu logo */
 }
 
 .footer-columns h3 {
@@ -444,12 +611,8 @@ a:hover {
     }
 }
 
-/* Pagina De Nosotros*/
-
-
-
-/* Hero */
-.nosotros-hero {
+/* HERO GLOBAL */
+.hero {
     background: linear-gradient(135deg, #0c5e6b 0%, #2ba6b1 60%, #53b4d4 100%);
     padding: 2.5rem 1.2rem 3rem;
     text-align: center;
@@ -457,34 +620,34 @@ a:hover {
     overflow: hidden;
 }
 
-.nosotros-hero::before {
+.hero::before {
     content: '';
     position: absolute;
     inset: 0;
     background: radial-gradient(ellipse at 70% 50%, rgba(255, 255, 255, .07) 0%, transparent 70%);
 }
 
-.nosotros-hero h1 {
+.hero__title {
     font-family: 'Playfair Display', serif;
     font-size: 1.9rem;
     font-weight: 700;
     color: #fff;
-    position: relative;
     margin: 0;
+    position: relative;
 }
 
-.nosotros-hero h1 span {
+.hero__title span {
     font-weight: 400;
 }
 
-.nosotros-hero p {
+.hero__sub {
     margin-top: .5rem;
     color: rgba(255, 255, 255, .82);
     font-size: .95rem;
     position: relative;
 }
 
-.qs-hero-line {
+.hero__line {
     width: 50px;
     height: 3px;
     background: rgba(255, 255, 255, .55);
@@ -492,6 +655,19 @@ a:hover {
     margin: .9rem auto 0;
     position: relative;
 }
+
+/* ESCALADO */
+@media (min-width: 768px) {
+    .hero__title {
+        font-size: 2.4rem;
+    }
+
+    .hero {
+        padding: 3.5rem 2rem 4rem;
+    }
+}
+
+/* Pagina De Nosotros*/
 
 /* Body */
 .qs-body {
@@ -528,15 +704,6 @@ a:hover {
     object-fit: cover;
     object-position: top;
     display: block;
-}
-
-.doctor-img-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #d4eae8;
 }
 
 .doctor-img-placeholder svg {
@@ -652,13 +819,6 @@ a:hover {
 
 /* Tablet */
 @media (min-width: 600px) {
-    .qs-hero h1 {
-        font-size: 26px;
-    }
-
-    .qs-hero p {
-        font-size: 14px;
-    }
 
     .qs-body {
         padding: 40px 24px;
@@ -688,13 +848,6 @@ a:hover {
 
 /* Desktop */
 @media (min-width: 1024px) {
-    .qs-hero {
-        padding: 60px 24px;
-    }
-
-    .qs-hero h1 {
-        font-size: 32px;
-    }
 
     .qs-body {
         max-width: 900px;
@@ -718,51 +871,6 @@ a:hover {
 
 /*Pagina de Contacto*/
 
-
-/* Hero */
-.contacto-hero {
-    background: linear-gradient(135deg, #0c5e6b 0%, #2ba6b1 60%, #53b4d4 100%);
-    padding: 2.5rem 1.2rem 3rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.contacto-hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse at 70% 50%, rgba(255, 255, 255, .07) 0%, transparent 70%);
-}
-
-.contacto-hero__title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.9rem;
-    font-weight: 700;
-    color: #fff;
-    position: relative;
-    margin: 0;
-}
-
-.contacto-hero__title span {
-    font-weight: 400;
-}
-
-.contacto-hero__sub {
-    margin-top: .5rem;
-    color: rgba(255, 255, 255, .82);
-    font-size: .95rem;
-    position: relative;
-}
-
-.contacto-hero__line {
-    width: 50px;
-    height: 3px;
-    background: rgba(255, 255, 255, .55);
-    border-radius: 2px;
-    margin: .9rem auto 0;
-    position: relative;
-}
 
 /* Contenedor principal */
 .contacto-wrap {
@@ -897,9 +1005,6 @@ a:hover {
 
 /* Tablet / desktop: dos columnas */
 @media (min-width: 768px) {
-    .contacto-hero__title {
-        font-size: 2.4rem;
-    }
 
     .contacto-wrap {
         padding: 2.5rem 1.5rem 4rem;
@@ -922,51 +1027,6 @@ a:hover {
 }
 
 /* Pagina de Servicios*/
-
-
-.servicios-hero {
-    background: linear-gradient(135deg, #0c5e6b 0%, #2ba6b1 60%, #53b4d4 100%);
-    padding: 2.5rem 1.2rem 3rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.servicios-hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse at 70% 50%, rgba(255, 255, 255, .07) 0%, transparent 70%);
-}
-
-.servicios-hero__title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.9rem;
-    font-weight: 700;
-    color: #fff;
-    position: relative;
-    margin: 0;
-}
-
-.servicios-hero__title span {
-    font-weight: 400;
-}
-
-.servicios-hero__sub {
-    margin-top: .5rem;
-    color: rgba(255, 255, 255, .82);
-    font-size: .95rem;
-    position: relative;
-}
-
-.servicios-hero__line {
-    width: 50px;
-    height: 3px;
-    background: rgba(255, 255, 255, .55);
-    border-radius: 2px;
-    margin: .9rem auto 0;
-    position: relative;
-}
 
 .servicios-section {
     background: #eaf2f7;
@@ -1011,54 +1071,9 @@ a:hover {
     padding: 15px;
 }
 
-/* ================================================
-   Página del Autor — mobile first
-   ================================================ */
-
-/* Hero */
-.autor-hero {
-    background: linear-gradient(135deg, #0c5e6b 0%, #2ba6b1 60%, #53b4d4 100%);
-    padding: 2.5rem 1.2rem 3rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.autor-hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse at 70% 50%, rgba(255, 255, 255, .07) 0%, transparent 70%);
-}
-
-.autor-hero__title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.9rem;
-    font-weight: 700;
-    color: #fff;
-    position: relative;
-    margin: 0;
-}
-
-.autor-hero__title span {
-    font-weight: 400;
-}
-
-.autor-hero__sub {
-    margin-top: .5rem;
-    color: rgba(255, 255, 255, .82);
-    font-size: .95rem;
-    position: relative;
-}
-
-.autor-hero__line {
-    width: 50px;
-    height: 3px;
-    background: rgba(255, 255, 255, .55);
-    border-radius: 2px;
-    margin: .9rem auto 0;
-    position: relative;
-}
+/*
+   Página del Autor 
+*/
 
 /* Layout principal */
 .autor-wrap {
@@ -1323,9 +1338,6 @@ a:hover {
 
 /* Tablet: layout de dos columnas */
 @media (min-width: 768px) {
-    .autor-hero__title {
-        font-size: 2.4rem;
-    }
 
     .autor-wrap {
         flex-direction: row;

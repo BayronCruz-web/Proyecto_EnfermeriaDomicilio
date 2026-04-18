@@ -54,5 +54,50 @@ function calcularEdad() {
 }
 
 /* Llama la función cuando el DOM esté listo */
-document.addEventListener('DOMContentLoaded', calcularEdad);
+function initCarruselServicios() {
+    const track = document.querySelector('.servicios-track');
+    const cards = document.querySelectorAll('.servicio-card');
+    const btnPrev = document.querySelector('.servicios-btn-prev');
+    const btnNext = document.querySelector('.servicios-btn-next');
 
+    if (!track || !cards.length) return;
+
+    let current = 0;
+
+    function getGap() {
+        return parseInt(getComputedStyle(track).gap) || 0;
+    }
+
+    function visibles() {
+        return window.innerWidth >= 768 ? 3 : 1;
+    }
+
+    function maxIndex() {
+        return cards.length - visibles();
+    }
+
+    function mover() {
+        const gap = getGap();
+        const cardWidth = cards[0].offsetWidth + gap;
+        track.style.transform = `translateX(-${current * cardWidth}px)`;
+    }
+
+    btnPrev.addEventListener('click', () => {
+        current = Math.max(0, current - 1);
+        mover();
+    });
+
+    btnNext.addEventListener('click', () => {
+        current = Math.min(maxIndex(), current + 1);
+        mover();
+    });
+
+    window.addEventListener('resize', () => {
+        current = Math.min(current, maxIndex());
+        mover();
+    });
+
+    mover();
+}
+
+document.addEventListener('DOMContentLoaded', initCarruselServicios);
