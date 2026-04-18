@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Enfermeria a Domicilio</title>
+    <title>Barrantes y González Enfermería</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
@@ -24,7 +24,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <a class="navbar-brand fw-bold titulo-navbar" href="#">Enfermería a Domicilio</a>
+            <a class="navbar-brand fw-bold titulo-navbar" href="#">Barrantes y González Enfermería</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
                 aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="bi bi-list"></i>
@@ -51,7 +51,7 @@
 
             <article class="wdm-banner-content">
                 <span class="banner-badge">Atención profesional en casa</span>
-                <h2>Enfermería a Domicilio<br>Leidy González</h2>
+                <h2>Enfermería a Domicilio<br>Barrantes y González</h2>
                 <p>
                     Brindamos atención de enfermería profesional en la comodidad de su hogar.
                     Nuestro compromiso es ofrecer cuidado humano, seguro y personalizado
@@ -100,10 +100,10 @@
 
         <section class="servicios-section">
 
-            <div class="servicios-header text-center">
-                <h1>Nuestros <strong>servicios</strong></h1>
-                <div class="titulo-linea"></div>
+            <div class="main-headers text-center">
+                <h1>Nuestros <span>servicios</span></h1>
                 <p>Experimente nuestra gama de servicios integrales adaptados a todas sus necesidades</p>
+                <div class="header-linea"></div>
             </div>
 
             <div class="servicios-carousel-wrapper">
@@ -168,78 +168,118 @@
         <!-- Finaliza Carousel de Servicios -->
 
         <!-- Inicia Carousel de Quienes Somos -->
-        <section id="quienes-somos">
+        <section class="qs-page">
 
-            <h2 class="qs-title">Quiénes Somos</h2>
-
-            <!-- Vista mobile: carousel Bootstrap -->
-            <div id="doctorCarousel" class="carousel slide d-block d-lg-none">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="doctor-card">
-                            <img src="assets/joven-doctora.jpg" class="doctor-img" alt="Doctor">
-                            <div class="doctor-overlay">
-                                <h3>Licda. Leidy Gonzalez</h3>
-                                <p>Licenciada en Enfermería con 18 años de experiencia en el área de la salud,
-                                    caracterizada por ofrecer una atención cálida, empática y personalizada. Su enfoque
-                                    profesional se basa en el trato humano y el acompañamiento cercano, adaptándose a
-                                    las necesidades individuales de cada paciente. Su amplia trayectoria respalda un
-                                    servicio confiable, comprometido con el bienestar y la atención de calidad.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="doctor-card">
-                            <img src="assets/doctor-elegante.jpg" class="doctor-img" alt="Doctor">
-                            <div class="doctor-overlay">
-                                <h3>MSc. Victor Barrantes</h3>
-                                <p>Enfermero Especialista en Cuidados Paliativos
-                                    Profesional en enfermería con más de 12 años de experiencia, especializado en
-                                    cuidados paliativos y en el acompañamiento integral de pacientes con enfermedades
-                                    terminales. Se destaca por brindar una atención centrada en la persona, con un
-                                    enfoque humano, respetuoso y personalizado, priorizando el bienestar y la calidad de
-                                    vida en cada etapa del proceso. Su experiencia le permite ofrecer apoyo tanto al
-                                    paciente como a sus familiares, con sensibilidad, ética y compromiso.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#doctorCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#doctorCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+            <div class="main-headers text-center">
+                <h1>¿Quiénes <span>Somos</span>?</h1>
+                <p>Conocé al equipo profesional detrás de Barrantes y González Enfermería, comprometido con tu bienestar y
+            cuidado
+            integral.</p>
+                <div class="header-linea"></div>
             </div>
+            
+            <div class="qs-body">
 
-            <!-- Vista desktop: flex directo, sin carousel -->
-            <div class="qs-desktop d-none d-lg-flex">
-                <div class="doctor-card">
-                    <img src="assets/joven-doctora.jpg" class="doctor-img" alt="Doctor">
-                    <div class="doctor-overlay">
-                        <h3>Licda. Leidy Gonzalez</h3>
-                        <p>Licenciada en Enfermería con 18 años de experiencia en el área de la salud,
-                            caracterizada por ofrecer una atención cálida, empática y personalizada. Su enfoque
-                            profesional se basa en el trato humano y el acompañamiento cercano, adaptándose a
-                            las necesidades individuales de cada paciente. Su amplia trayectoria respalda un
-                            servicio confiable, comprometido con el bienestar y la atención de calidad.</p>
+                <div class="qs-cards">
+
+                    <div class="doctor-card">
+                        <div class="doctor-img-wrap">
+                            <img src="assets/joven-doctora.jpg" alt="Licda. Leidy Gonzalez"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        </div>
+                        <div class="doctor-info">
+                            <span class="doctor-tag">Licenciada en Enfermería</span>
+                            <h3>Licda. Leidy Gonzalez</h3>
+                            <p>Licenciada en Enfermería con 18 años de experiencia en el área de la salud, caracterizada
+                                por ofrecer una atención cálida, empática y personalizada. Su enfoque profesional se
+                                basa en el trato humano y el acompañamiento cercano, adaptándose a las necesidades
+                                individuales de cada paciente. Su amplia trayectoria respalda un servicio confiable,
+                                comprometido con el bienestar y la atención de calidad.</p>
+                            <div class="doctor-divider"></div>
+                            <div class="doctor-stat">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
+                                </svg>
+                                Más de 18 años de experiencia
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="doctor-img-wrap">
+                            <img src="assets/doctor-elegante.jpg" alt="Lic. Victor Barrantes"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        </div>
+                        <div class="doctor-info">
+                            <span class="doctor-tag">Especialista en Cuidados Paliativos</span>
+                            <h3>Msc. Victor Barrantes</h3>
+                            <p>Profesional en enfermería con más de 12 años de experiencia, especializado en cuidados
+                                paliativos y en el acompañamiento integral de pacientes con enfermedades terminales. Se
+                                destaca por brindar una atención centrada en la persona, con un enfoque humano,
+                                respetuoso y personalizado, priorizando el bienestar y la calidad de vida en cada etapa
+                                del proceso. Su experiencia le permite ofrecer apoyo tanto al paciente como a sus
+                                familiares, con sensibilidad, ética y compromiso.</p>
+                            <div class="doctor-divider"></div>
+                            <div class="doctor-stat">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
+                                </svg>
+                                Especialista en adulto mayor
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="qs-values">
+                    <h2>Nuestros valores</h2>
+                    <div class="values-grid">
+
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+                                </svg>
+                            </div>
+                            <p>Vocación de servicio</p>
+                        </div>
+
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </div>
+                            <p>Cuidado seguro</p>
+                        </div>
+
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                                </svg>
+                            </div>
+                            <p>Atención personalizada</p>
+                        </div>
+
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                            </div>
+                            <p>Disponibilidad y puntualidad</p>
+                        </div>
+
                     </div>
                 </div>
-                <div class="doctor-card">
-                    <img src="assets/doctor-elegante.jpg" class="doctor-img" alt="Doctor">
-                    <div class="doctor-overlay">
-                        <h3>Msc. Victor Barrantes</h3>
-                        <p>Enfermero Especialista en Cuidados Paliativos
-                            Profesional en enfermería con más de 12 años de experiencia, especializado en
-                            cuidados paliativos y en el acompañamiento integral de pacientes con enfermedades
-                            terminales. Se destaca por brindar una atención centrada en la persona, con un
-                            enfoque humano, respetuoso y personalizado, priorizando el bienestar y la calidad de
-                            vida en cada etapa del proceso. Su experiencia le permite ofrecer apoyo tanto al
-                            paciente como a sus familiares, con sensibilidad, ética y compromiso.</p>
-                    </div>
-                </div>
+
             </div>
 
         </section>
@@ -253,7 +293,7 @@
 
                 <div class="footer-columns footer-about">
                     <div class="footer-logo">
-                        <img src="assets/LogoEnfermeriaB&G.png" alt="Barrantes & González Enfermería">
+                        <img src="assets/logoVersion5.png" alt="Barrantes & González Enfermería">
                     </div>
 
                     <p class="footer-description">
