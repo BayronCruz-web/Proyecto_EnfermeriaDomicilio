@@ -367,6 +367,11 @@ a:hover {
     flex-grow: 1;
     margin: 0 0 10px 0;
 }
+.servicio-body h5{
+    color: red !important;
+    font-size: 14px;
+
+}
 
 /* BUTTON */
 .servicio-btn {
@@ -1162,6 +1167,7 @@ a:hover {
     height: 520px;
     display: flex;
     flex-direction: column;
+    min-height: 670px;
 }
 
 .servicio-card img {
