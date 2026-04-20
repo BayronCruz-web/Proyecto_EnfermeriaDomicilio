@@ -196,7 +196,7 @@ function calcularEdad() {
 let mapa, marcadorUsuario;
 
 function initMapa() {
-    const costaRica = { lat: 9.9281, lng: -84.0907 };
+    const costaRica = { lat: 10.048741, lng: -84.244936 };
 
     mapa = new google.maps.Map(document.getElementById("mapa"), {
         zoom: 12,
@@ -210,7 +210,7 @@ function initMapa() {
 
     const infoWindowNegocio = new google.maps.InfoWindow({
         content: '<div style="font-family:sans-serif;font-size:13px;color:#0c5e6b;padding:4px 6px;">' +
-            '<strong>Barrantes &amp; González</strong><br>Enfermería a Domicilio<br>Costa Rica</div>'
+            '<strong>Barrantes &amp; González</strong><br>Barrantes & González Enfermería a Domicilio<br>Costa Rica</div>'
     });
 
     const marcadorNegocio = new google.maps.Marker({
