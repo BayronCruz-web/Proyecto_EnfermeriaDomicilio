@@ -20,7 +20,7 @@ function crearCardServicio(servicio) {
                 ${servicio.imagen_ilustrativa
                     ? '<h5>¡Imagen ilustrativa debido a fines de confidencialidad!</h5>'
                     : ''}
-                <a href="contacto.html" class="servicio-btn">Saber más</a>
+                <a href="servicios.html" class="servicio-btn">Saber más</a>
             </div>
         </div>
     `;
