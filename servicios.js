@@ -8,9 +8,9 @@ const SERVICIOS_URL = 'https://bayroncruz-web.github.io/servicios-api/data/servi
 function crearItemCarousel(servicio, index) {
     return `
         <div class="carousel-item ${index === 0 ? 'active' : ''}">
-            <div class="servicio-card">
+            <div class="sub-servicio-card">
                 <img src="${servicio.imagen}" class="img-fluid" alt="${servicio.titulo}">
-                <div class="servicio-body">
+                <div class="sub-servicio-body">
                     <h3>${servicio.titulo}</h3>
                     <p>${servicio.descripcion_larga}</p>
                     ${servicio.requiere_prescripcion
